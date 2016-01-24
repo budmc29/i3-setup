@@ -52,3 +52,9 @@ dpkg -i /tmp/rofi*.dev
 
 # to fix i3 opacity
 apt-get install compton -y
+
+# install i3blocks
+git clone git://github.com/vivien/i3blocks /tmp/i3blocks
+apt-get install ruby-ronn
+cd /tmp/i3blocks  && make clean all
+make install
