@@ -12,3 +12,43 @@ cd /tmp/ && wget https://github.com/acrisci/playerctl/releases/download/v0.4.2/p
 # install deb package
 dpkg -i /tmp/playerctl*
 
+# modify monitors resolution
+# to save for i3, save the setting and copy the content from the generated bash file
+# cat ~/.screenlayout/foo.so
+apt-get install arandr
+
+# file manager
+apt-get install ranger -y
+
+# install San Francisco font system wide
+cd /tmp/ && wget https://github.com/supermarin/YosemiteSanFranciscoFont/archive/master.zip
+
+# unzip
+unzip /tmp/master.zip
+
+# move to system fonts
+mv /tmp/Yo*/*.ttf ~/.fonts
+
+# change gtk-theme font for system
+apt-get install lxappearance -y
+echo "Remeber to open, lxappearance and set SFNS Display font for gtk"
+echo "Press enter to continue"
+
+# install infinality for better font rendering
+add-apt-repository ppa:no1wantdthisname/ppa
+apt-get update
+apt-get upgrade -y
+apt-get install fontconfig-infinality -y
+
+# set osx display style
+bash /etc/fonts/infinality/infctl.sh setstyle osx
+
+# install gtk-2, 3 visual theme
+sudo add-apt-repository ppa:noobslab/themes && sudo apt-get update && sudo apt-get install polar-night-gtk -y --force-yes
+
+# install rofi app launcher
+cd /tmp/ && wget https://launchpad.net/ubuntu/+source/rofi/0.15.11-1/+build/8289001/+files/rofi_0.15.11-1_amd64.deb
+dpkg -i /tmp/rofi*.dev
+
+# to fix i3 opacity
+apt-get install compton -y
