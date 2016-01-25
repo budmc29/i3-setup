@@ -56,6 +56,8 @@ apt-get install compton -y
 
 # install i3blocks
 git clone git://github.com/vivien/i3blocks /tmp/i3blocks
-apt-get install ruby-ronn
+apt-get install ruby-ronn -y
 cd /tmp/i3blocks  && make clean all
 make install
+
+echo "Install completed. Remember to copy the config files from ubuntu-dotfiles"
