@@ -23,12 +23,15 @@ apt-get install ranger -y
 
 # install San Francisco font system wide
 cd /tmp/ && wget https://github.com/supermarin/YosemiteSanFranciscoFont/archive/master.zip
-
 # unzip
 unzip /tmp/master.zip
-
 # move to system fonts
 mv /tmp/Yo*/*.ttf ~/.fonts
+
+# install fontawsome
+cd /tmp/ && wget https://fortawesome.github.io/Font-Awesome/assets/font-awesome-4.5.0.zip
+unzip /tmp/font-awesome*.zip
+mv /tmp/font-awesome*/fonts/*.ttf ~/.fonts
 
 # change gtk-theme font for system
 apt-get install lxappearance -y
