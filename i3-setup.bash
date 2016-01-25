@@ -4,8 +4,9 @@
 echo "Remeber to git clone ubuntu-dotfiles before installing everything"
 read
 
+# install i3
+apt-get install i3
 # install playerctl from a .deb release if you need multimedia keys to work on a laptop
-
 # download to temp
 cd /tmp/ && wget https://github.com/acrisci/playerctl/releases/download/v0.4.2/playerctl-0.4.2_amd64.deb
 
