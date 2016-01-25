@@ -29,9 +29,9 @@ unzip /tmp/master.zip
 mv /tmp/Yo*/*.ttf ~/.fonts
 
 # install fontawsome
-cd /tmp/ && wget https://fortawesome.github.io/Font-Awesome/assets/font-awesome-4.5.0.zip
-unzip /tmp/font-awesome*.zip
-mv /tmp/font-awesome*/fonts/*.ttf ~/.fonts
+cd /tmp/ && wget https://github.com/FortAwesome/Font-Awesome/archive/v4.5.0.zip
+unzip /tmp/v4*.zip
+mv /tmp/Font-A*/fonts/*.ttf ~/.fonts
 
 # change gtk-theme font for system
 apt-get install lxappearance -y
