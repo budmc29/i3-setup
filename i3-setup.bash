@@ -48,8 +48,8 @@ bash /etc/fonts/infinality/infctl.sh setstyle osx
 sudo add-apt-repository ppa:noobslab/themes && sudo apt-get update && sudo apt-get install polar-night-gtk -y --force-yes
 
 # install rofi app launcher
-cd /tmp/ && wget https://launchpad.net/ubuntu/+source/rofi/0.15.11-1/+build/8289001/+files/rofi_0.15.11-1_amd64.deb
-dpkg -i /tmp/rofi*.dev
+cd /tmp/ && wget https://launchpad.net/ubuntu/+source/rofi/0.15.11-1/+build/8289001/+files/rofi_0.15.11-1_amd64.deb /tmp/
+dpkg -i /tmp/rofi*.deb
 
 # to fix i3 opacity
 apt-get install compton -y
