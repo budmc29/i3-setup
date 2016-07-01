@@ -63,4 +63,7 @@ apt-get install ruby-ronn -y
 cd /tmp/i3blocks  && make clean all
 make install
 
+# to display the cpu usage
+apt-get install sysstat
+
 echo "Install completed. Remember to copy the config files from ubuntu-dotfiles"
