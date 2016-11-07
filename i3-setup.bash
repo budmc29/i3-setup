@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# install all programs for i3 on a new machine
-echo "Remeber to git clone ubuntu-dotfiles before installing everything"
-read
-
 # install i3
 apt-get install i3
 # install playerctl from a .deb release if you need multimedia keys to work on a laptop
